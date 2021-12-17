@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+/* header */
+header {
+  height: 60px;
+}
+
+.navbar {
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 15px;
+}
+
+.navbar ul li {
+  margin-left: 15px;
+}
+
+.navbar ul li a {
+  color: black;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.circle-shadow {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-shadow:hover {
+  background-color: rgba(0, 0, 0, 0.233);
+}
+
+.menu-icon,
+.user-icon {
+  font-size: 18px;
+}
+
+.user-icon {
+  color: white;
+}
+
+.user-icon {
+  background-color: goldenrod;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* Content */
+
+.content-section {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.google-logo.png {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  border: 1px solid lightgrey;
+  width: 600px;
+  height: 45px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.search-bar:hover {
+  box-shadow: #858585;
+}
+
+.search-bar i {
+  font-size: 18px;
+  color: grey;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  height: 30px;
+  margin-right: 15px;
+  font-size: 16px;
+  border: none;
+}
+
+.search-button {
+  margin-top: 20px;
+}
+
+.search-button button {
+  height: 40px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: black;
+  background-color: #f2f3f4;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-button button:hover {
+  border: 1px solid lightgrey;
+}
+
+.google-search-button {
+  width: 120px;
+}
+
+.lucky-search-button {
+  width: 140px;
+}
+
+.language {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.language p a {
+  color: blue;
+}
+
+/* underline is not working */
+.language p a:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+footer {
+  background-color: #f2f2f2;
+  height: 130px;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.upper-footer {
+  height: 50%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.upper-footer p {
+  font-size: grey;
+  font-size: 14px;
+  margin-left: 27px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+/* problem - not moving to right side (justify content issue*/
+
+.lower-footer {
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lower-footer ul li a {
+  font-size: 14px;
+  color: grey;
+}
+
+.lower-footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.lower-left-footer {
+  display: flex;
+}
+
+.lower-left-footer li {
+  margin-right: 15px;
+}
+
+.lower-right-footer {
+  display: flex;
+  margin-left: auto;
+}
+
+.lower-right-footer li {
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 650px) {
+  .searchbar {
+    width: 70px;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .upper-footer {
+    height: 50px;
+  }
+
+  .lower-footer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+}
